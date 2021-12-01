@@ -18,7 +18,9 @@ class App extends React.Component {
     return (
       <Body>
         <Filtros />
-        <ContainerCards />
+        <ContainerCards>
+        
+        </ContainerCards>
         <Carrinho />
       </Body>
   );
