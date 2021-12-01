@@ -1,5 +1,7 @@
-import React from "react";
-import styled from "styled-components"  
+import React, { useState } from "react";
+import styled from "styled-components" 
+import CardProdutos from "./CardProdutos";
+import ContainerCards from "./ContainerCards"; 
 
 const Container = styled.div`
 display:flex;
@@ -18,8 +20,10 @@ const InputTag = styled.div`
 margin: 10px 0;
 `
 
-class Filtros extends React.Component {
-    render() {
+export default function Filtros () { 
+    const listaDeProdutos = <ListaProdutos></ListaProdutos>
+    const [busca, setBusca] = useState ('');
+        const listaProdutosFiltrada = listaDeProdutos.filter((CardProdutos) => CardProdutos.startsWith(busca))
 
         return (
             <Container>
@@ -34,9 +38,12 @@ class Filtros extends React.Component {
                 </InputTag>
                 <InputTag>
                     <label>Busca por Nome </label><br />
-                    <input type="text" />
+                    <input type="text" 
+                    value = {busca}
+                    onChange = {(event) => setBusca(event.target.value)}/>
                 </InputTag>
+                <ul>
+                </ul>
             </Container>)
-        }
+
 }
-export default Filtros;

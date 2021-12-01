@@ -26,6 +26,7 @@ padding: 10px;
 
 
 class ContainerCards extends React.Component {
+   
     render() {
         return (
             <Container>
@@ -48,8 +49,7 @@ class ContainerCards extends React.Component {
                     <CardProdutos tituloProduto = {"Um Produto Radical"} preçoProduto = {Number(360).toFixed(2)}/>
                     <CardProdutos tituloProduto = {"Um Produto Diferenciado"} preçoProduto = {Number(643).toFixed(2)}/>
                     <CardProdutos tituloProduto = {"Um Produto Barro"} preçoProduto = {Number(310).toFixed(2)}/>
-                </ListaProdutos>
-                
+                </ListaProdutos>                
             </Container>)
         }
 }
