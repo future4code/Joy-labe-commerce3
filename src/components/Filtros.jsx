@@ -34,6 +34,7 @@ class Filtros extends React.Component {
                 </InputTag>
                 <InputTag>
                     <label>Busca por Nome </label><br />
+                    
                     <input type="text" />
                 </InputTag>
             </Container>)
