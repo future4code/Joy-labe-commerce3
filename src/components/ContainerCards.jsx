@@ -27,6 +27,50 @@ padding: 10px;
 
 class ContainerCards extends React.Component {
     render() {
+
+        let listaProdutos =[
+            {   id: 1,
+                name: "Um Produto Bonito",
+                value: 50,   
+                imageUrl: "https://picsum.photos/200/200", 
+            },
+            {   id: 2,
+                name: "Um Produto Legal",
+                value: 150,   
+                imageUrl: "https://picsum.photos/200/200", 
+            },
+            {   id: 3,
+                name: "Um Produto Maneiro", 
+                value: 500,     
+                imageUrl: "https://picsum.photos/200/200", 
+            },
+            {   id: 4,
+                name: "Um Produto Interessante", 
+                value: 250,     
+                imageUrl: "https://picsum.photos/200/200", 
+            },
+            {   id: 5,
+                name: "Um Produto Barato", 
+                value: 20,    
+                imageUrl: "https://picsum.photos/200/200", 
+            },
+            {   id: 6,
+                name: "Um Produto Radical", 
+                value: 360,   
+                imageUrl: "https://picsum.photos/200/200", 
+            },
+            {   id: 7,
+                name:"Um Produto Diferenciado", 
+                value: 643,  
+                imageUrl: "https://picsum.photos/200/200", 
+            },
+            {   id: 8,
+                name:"Um Produto Barro",
+                value: 310,   
+                imageUrl: "https://picsum.photos/200/200", 
+            }
+
+        ];
         return (
             <Container>
                 <Navegacao>
@@ -40,15 +84,18 @@ class ContainerCards extends React.Component {
                     </div>
                 </Navegacao>
                 <ListaProdutos>
-                    <CardProdutos tituloProduto = {"Um Produto Bonito"} preçoProduto = {Number(50).toFixed(2)}/>
-                    <CardProdutos tituloProduto = {"Um Produto Legal"} preçoProduto = {Number(150).toFixed(2)}/>
-                    <CardProdutos tituloProduto = {"Um Produto Maneiro"} preçoProduto = {Number(500).toFixed(2)}/>
-                    <CardProdutos tituloProduto = {"Um Produto Interessante"} preçoProduto = {Number(250).toFixed(2)}/>
-                    <CardProdutos tituloProduto = {"Um Produto Barato"} preçoProduto = {Number(20).toFixed(2)}/>
-                    <CardProdutos tituloProduto = {"Um Produto Radical"} preçoProduto = {Number(360).toFixed(2)}/>
-                    <CardProdutos tituloProduto = {"Um Produto Diferenciado"} preçoProduto = {Number(643).toFixed(2)}/>
-                    <CardProdutos tituloProduto = {"Um Produto Barro"} preçoProduto = {Number(310).toFixed(2)}/>
+                    <CardProdutos  
+                    const produtoUm 
+                    />
+                    <CardProdutos/>
+                    <CardProdutos/>
+                    <CardProdutos/>
+                    <CardProdutos/>
+                    <CardProdutos/>
+                    <CardProdutos/>
+                    <CardProdutos/>
                 </ListaProdutos>
+
                 
             </Container>)
         }
